@@ -1,0 +1,259 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    max-width: 1440px;
+    height: 700px;
+    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.title {
+    width: 500px;
+    margin-right: 50px;
+}
+
+.title p {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+.trial {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    border: 1px solid hsl(249, 10%, 26%);
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.2);
+}
+
+label .p-labell {
+    font-weight: 600;
+}
+
+form {
+    display: grid;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ----- Validation ----- */
+.text-validaty {
+    color: red;
+    text-align: right;
+    font-style: italic;
+    display: none;
+}
+
+form input {
+    margin: 10px 0px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: url(../images/icon-error.svg);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 23em;
+    color: hsl(249, 10%, 26%);
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.submit {
+    background-color: hsl(154, 59%, 51%);
+    background-image: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: #53b08f;
+}
+
+.submit:hover {
+    background-color: #37755f;
+    box-shadow: 0px 2px 15px hsl(154, 59%, 51%);
+}
+
+.small-text {
+    display: flex;
+    font-size: 0.8em;
+    padding: 0px 10px;
+}
+
+.small-text small {
+    color: hsl(246, 25%, 77%);
+}
+
+.small-text .red {
+    color: red;
+    cursor: pointer;
+}
+
+.small-text .red:hover {
+    text-decoration: underline;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    height: 50px;
+}
+
+.attribution a {
+    color: hsl(248, 32%, 49%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+/* Extra small devices (portrait phones, less than 375px) */
+@media (max-width: 375px) { 
+    body{
+        background-image: url(../images/bg-intro-mobile.png);
+        /*height: 900;*/
+    }
+
+    .container {
+        /*height: 900;*/
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .title {
+        width: 375px;
+        margin: 50px 0px 30px 0px ;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .title p {
+        text-align: center;
+        font-size: 0.9em;
+        margin: 20px 30px 30px 30px;
+    }
+
+    label {
+        margin: 30px;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    form {
+        margin: 0px 30px;
+    } 
+    
+    form input {
+        background-position: 18em;
+    }
+
+    .small-text {
+        display: block;
+        text-align: center;
+    }
+
+    .attribution {
+        font-size: 0.7em;
+    }
+}
+
+/* Small devices (landscape phones, 375 and up) */
+@media (min-width: 375px) and (max-width: 767.98px) { 
+    body{
+        background-image: url(../images/bg-intro-mobile.png);
+        /*height: 900;*/
+    }
+
+    .container {
+        /*height: 900;*/
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .title {
+        margin: 50px 0px 30px 0px ;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .title p {
+        text-align: center;
+        font-size: 0.9em;
+        margin: 20px 30px 30px 30px;
+    }
+
+    label {
+        margin: 30px;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    form {
+        margin: 0px 30px;
+    } 
+    
+    form input {
+        background-position: 18em;
+    }
+
+    .small-text {
+        display: block;
+        text-align: center;
+    }
+
+    .attribution {
+        font-size: 0.7em;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}

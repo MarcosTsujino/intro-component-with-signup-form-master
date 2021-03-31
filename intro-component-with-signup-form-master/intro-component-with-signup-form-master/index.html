@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- IconMoon -->
+    <link rel="stylesheet" href="https://icomoon.io" crossorigin="anonymous">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://ionicons.com" crossorigin="anonymous">
+
+    <!-- HTML5Shiv -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <![endif]-->
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  
+  </head>
+
+  <body>
+
+    <section class="container">
+      <div class="title">
+        <h1>Learn to code by <br>
+           watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. <br>
+        Watching scripted tutorials is great, but understanding how <br>
+        developers think is invaluable. 
+        </p>
+      </div>
+
+      <div class="trial">
+        <label for=""><p class="p-labell">Try it free 7 days</p> &nbsp; <p>Then $20/mo. thereafter</p></label>
+      </div>
+
+      <div>
+        <form  class="form" id="form1" onsubmit="return validarion" action=""> 
+          <input type="text" id="fname" placeholder="First Name">
+          <p id="f-valid" class="text-validaty">First Name can not be empty</p> 
+          <input type="text" id="lname" placeholder="Last Name">
+          <p id="l-valid" class="text-validaty">Last Name can not be empty</p> 
+          <input type="email" id="email" placeholder="Email Address">
+          <p id="email-valid" class="text-validaty">Look like this is not a valid email</p>
+          <input type="password" id="password" placeholder="Password">
+          <p id="pass-valid" class="text-validaty">Password can not be empty</p>
+
+          <input type="submit" class="submit" value="Claim your free trial">
+
+          <div class="small-text">
+            <small>By clicking the button, you are agreeing to our</small> <small class="red">Terms and Services</small>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    </section>
+    
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
